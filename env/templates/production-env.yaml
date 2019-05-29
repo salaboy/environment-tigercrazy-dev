@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: Environment
+metadata:
+  creationTimestamp: null
+  name: production
+spec:
+  kind: Permanent
+  label: Production
+  namespace: jx-production
+  order: 200
+  previewGitInfo:
+    user: {}
+  promotionStrategy: Manual
+  source:
+    ref: master
+    url: https://github.com/salaboy/environment-tigercrazy-production.git
+  teamSettings:
+    defaultScheduler:
+      kind: ""
+      name: ""
+status: {}

@@ -1,0 +1,12 @@
+apiVersion: jenkins.io/v1
+kind: App
+metadata:
+  annotations:
+    jenkins.io/chart-description: A Helm chart for Tekton Pipelines
+    jenkins.io/chart-repository: http://chartmuseum.jenkins-x.io
+  creationTimestamp: null
+  labels:
+    jenkins.io/app-name: tekton
+    jenkins.io/app-version: 0.0.38
+  name: tekton
+spec: {}

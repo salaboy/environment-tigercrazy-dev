@@ -1,0 +1,51 @@
+apiVersion: jenkins.io/v1
+kind: Environment
+metadata:
+  creationTimestamp: null
+  labels:
+    env: dev
+    team: jx
+  name: dev
+spec:
+  kind: Development
+  label: Development
+  namespace: jx
+  previewGitInfo:
+    user: {}
+  promotionStrategy: Never
+  source:
+    ref: master
+    url: https://github.com/salaboy/environment-tigercrazy-dev.git
+  teamSettings:
+    appsRepository: http://chartmuseum.jenkins-x.io
+    buildPackName: kubernetes-workloads
+    buildPackRef: master
+    buildPackUrl: https://github.com/jenkins-x-buildpacks/jenkins-x-kubernetes.git
+    defaultScheduler:
+      kind: ""
+      name: ""
+    envOrganisation: salaboy
+    gitServer: https://github.com
+    helmTemplate: true
+    importMode: YAML
+    kubeProvider: gke
+    pipelineUsername: salaboy
+    promotionEngine: Prow
+    prowEngine: Tekton
+    quickstartLocations:
+    - excludes:
+      - WIP-*
+      gitKind: github
+      gitUrl: https://github.com
+      includes:
+      - '*'
+      owner: jenkins-x-quickstarts
+    storageLocations:
+    - bucketUrl: gs://samuraiturtle-lts-0ad60c5b-2314-43e6-bf1d-3314b6cf4913
+      classifier: default
+    - bucketUrl: gs://samuraiturtle-lts-0ad60c5b-2314-43e6-bf1d-3314b6cf4913
+      classifier: logs
+    useGitOps: true
+    versionStreamUrl: https://github.com/jenkins-x/jenkins-x-versions.git
+  webHookEngine: Prow
+status: {}

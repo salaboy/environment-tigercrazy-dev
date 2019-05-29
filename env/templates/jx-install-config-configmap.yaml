@@ -1,0 +1,34 @@
+apiVersion: v1
+data:
+  ca.crt: |
+    -----BEGIN CERTIFICATE-----
+    MIIDCzCCAfOgAwIBAgIQN2UWBlOhT+XrZRyCo58iUTANBgkqhkiG9w0BAQsFADAv
+    MS0wKwYDVQQDEyRjN2U3ODViNi01MWIzLTQwNDUtODM5OS1kZjhmNGY2NjkzMzcw
+    HhcNMTkwNTI5MDkxNDMzWhcNMjQwNTI3MTAxNDMzWjAvMS0wKwYDVQQDEyRjN2U3
+    ODViNi01MWIzLTQwNDUtODM5OS1kZjhmNGY2NjkzMzcwggEiMA0GCSqGSIb3DQEB
+    AQUAA4IBDwAwggEKAoIBAQCeq3150tR/BpjIXlwd3Q/fzjhDVZJRV0saTn3Yidvx
+    g57XjVCs5QPo6HGaRRqOa7ghYa+oDsNgkuypgPQOdVVEhdlCl19TbTZCpUUQdPOA
+    RgX9hSc+Kg4X8Kq42v9OQcCf7QzV9LMz8Xo7m1GxSzzbzWig0nQNZz12UVp9J3C5
+    uFub1/+dbPlETE6B4BSs6TEFFsWiSMvFkIk0kgGrPSB1CvP5mh/3I+3jNY00LgjC
+    edBqzblc5UveL9gK1KJPDkkbp39JUINFQ/6qgpQ41T4wo9FxHBk4zKlYG/gHvvFF
+    5YMCqE7PP4x/Bluo9vCcFJfsroorH6UlpbbwmXidKqIhAgMBAAGjIzAhMA4GA1Ud
+    DwEB/wQEAwICBDAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQCI
+    uu2a1oOsWuCQpfRpBetBHrwKEj/QRFn9NrsqTSxtWZswYxUhOeU7vTTv1Il12Jal
+    lOymRUHdqBTJaqXYrqH7oi+fhEMFohlozj86Vmrd53RFmdGrg8I66RhJFT+30b1D
+    rNxVjyOv/tTN42L4ag8wz+RRVZwP5rqu913gjo3qiSq4uKBk8rjhP7o/mf8M2CFZ
+    ggSQdo3Ac3I4bkHke8sJgIFRHaMqcCWG0fJsuIzTsDTAYmAuwUfeXzTewDBilAzh
+    IgJc1j7INMTOPRvxJMbX1L7mQjEhVeOIpWKN2Z824oCdiws5kbbW/qTMmmEoiwZZ
+    xZBOHMNgRP75LKtpF/fa
+    -----END CERTIFICATE-----
+  clusterName: samuraiturtle
+  jx-install-version: 2.0.184
+  kubeProvider: gke
+  projectID: activiti-cloud-blueprint
+  secretsLocation: vault
+  server: https://35.204.216.211
+  systemVaultName: jx-vault-samuraiturtle
+  zone: europe-west3-c
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: jx-install-config
